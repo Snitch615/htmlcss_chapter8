@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 50px auto;
+	width: 960px;
+}
+
+.lists {
+	margin-bottom: 50px;
+}
+
+.list:nth-child(odd) {
+	background-color: grey;
+}
+
+.list {
+	padding: 20px;
+}
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content {
+	width: 30%;
+	height: 200px;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 40px;
+	background-color: yellow;
+}
+
+.content:first-child, .content:nth-child(5), .content:last-child {
+	background-color: orange;
+}
+
+.content:nth-child(3n) {
+	margin-right: 0;
+}
+
+.content:nth-child(7, 8), .content:last-child {
+	margin-bottom: 0;
+}
